@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Visualizacion datos personales</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+</head>
+<body>
+
+  <h1>Libros leidos y pendientes</h1>
+  
+  
+    <div id="vis3"></div>
+    
+<script>
+var vlSpec3 = {
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "data": {"name": "data-652991006f1d8132f666fa6bd87c6299"},
+  "mark": {"type": "area", "opacity": 0.3},
+  "encoding": {
+    "color": {"field": "Label", "type": "nominal"},
+    "x": {"field": "Date", "type": "temporal"},
+    "y": {"field": "count", "stack": null, "type": "quantitative"}
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-652991006f1d8132f666fa6bd87c6299": [
+      {
+        "Date": "2020-04-23T00:00:00",
+        "count": 1,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-04-25T00:00:00",
+        "count": 2,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-04-27T00:00:00",
+        "count": 4,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-04-28T00:00:00",
+        "count": 5,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-06-06T00:00:00",
+        "count": 6,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-06-21T00:00:00",
+        "count": 7,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-06-24T00:00:00",
+        "count": 8,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-07-01T00:00:00",
+        "count": 10,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-07-12T00:00:00",
+        "count": 11,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-07-25T00:00:00",
+        "count": 12,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-07-31T00:00:00",
+        "count": 14,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-08-04T00:00:00",
+        "count": 15,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-08-24T00:00:00",
+        "count": 18,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-08-25T00:00:00",
+        "count": 19,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-09-19T00:00:00",
+        "count": 23,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-09-25T00:00:00",
+        "count": 24,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-09-27T00:00:00",
+        "count": 25,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-10-10T00:00:00",
+        "count": 27,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-10-16T00:00:00",
+        "count": 30,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-10-19T00:00:00",
+        "count": 31,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-10-20T00:00:00",
+        "count": 32,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-10-21T00:00:00",
+        "count": 35,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-10-23T00:00:00",
+        "count": 36,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-10-24T00:00:00",
+        "count": 37,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-11-29T00:00:00",
+        "count": 38,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-12-06T00:00:00",
+        "count": 39,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-12-30T00:00:00",
+        "count": 41,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-01-05T00:00:00",
+        "count": 42,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-01-06T00:00:00",
+        "count": 43,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-01-07T00:00:00",
+        "count": 45,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-01-10T00:00:00",
+        "count": 46,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-01-19T00:00:00",
+        "count": 47,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-01-20T00:00:00",
+        "count": 48,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-02-09T00:00:00",
+        "count": 49,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-02-20T00:00:00",
+        "count": 50,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-03-06T00:00:00",
+        "count": 51,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-03-15T00:00:00",
+        "count": 52,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-06-30T00:00:00",
+        "count": 53,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-08-10T00:00:00",
+        "count": 54,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-08-17T00:00:00",
+        "count": 55,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-12-26T00:00:00",
+        "count": 57,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2021-12-29T00:00:00",
+        "count": 59,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2022-01-14T00:00:00",
+        "count": 61,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2022-01-20T00:00:00",
+        "count": 62,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2022-01-25T00:00:00",
+        "count": 63,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2022-02-05T00:00:00",
+        "count": 64,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2022-03-04T00:00:00",
+        "count": 65,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2022-04-13T00:00:00",
+        "count": 66,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2022-07-17T00:00:00",
+        "count": 67,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2022-07-18T00:00:00",
+        "count": 68,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2022-07-24T00:00:00",
+        "count": 69,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2022-08-01T00:00:00",
+        "count": 70,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2022-11-04T00:00:00",
+        "count": 71,
+        "Label": "Net amount added to the TBR"
+      },
+      {
+        "Date": "2020-05-12T00:00:00",
+        "count": 1,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-05-13T00:00:00",
+        "count": 2,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-05-28T00:00:00",
+        "count": 3,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-06-01T00:00:00",
+        "count": 4,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-06-06T00:00:00",
+        "count": 5,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-06-28T00:00:00",
+        "count": 6,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-07-01T00:00:00",
+        "count": 7,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-07-03T00:00:00",
+        "count": 8,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-07-19T00:00:00",
+        "count": 9,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-07-22T00:00:00",
+        "count": 10,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-08-04T00:00:00",
+        "count": 11,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-08-09T00:00:00",
+        "count": 12,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-08-28T00:00:00",
+        "count": 13,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-09-12T00:00:00",
+        "count": 14,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-09-19T00:00:00",
+        "count": 15,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-10-11T00:00:00",
+        "count": 16,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-10-17T00:00:00",
+        "count": 17,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-10-25T00:00:00",
+        "count": 18,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-10-31T00:00:00",
+        "count": 19,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-11-08T00:00:00",
+        "count": 20,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-11-10T00:00:00",
+        "count": 21,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-11-15T00:00:00",
+        "count": 22,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-11-16T00:00:00",
+        "count": 23,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-11-28T00:00:00",
+        "count": 24,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-11-29T00:00:00",
+        "count": 25,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-12-01T00:00:00",
+        "count": 26,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-12-12T00:00:00",
+        "count": 28,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2020-12-28T00:00:00",
+        "count": 29,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-01-02T00:00:00",
+        "count": 30,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-01-04T00:00:00",
+        "count": 31,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-01-06T00:00:00",
+        "count": 33,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-01-10T00:00:00",
+        "count": 34,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-01-12T00:00:00",
+        "count": 35,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-01-23T00:00:00",
+        "count": 36,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-01-30T00:00:00",
+        "count": 37,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-02-05T00:00:00",
+        "count": 38,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-02-06T00:00:00",
+        "count": 39,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-02-09T00:00:00",
+        "count": 40,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-02-11T00:00:00",
+        "count": 41,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-02-13T00:00:00",
+        "count": 42,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-03-06T00:00:00",
+        "count": 43,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-03-11T00:00:00",
+        "count": 44,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-03-13T00:00:00",
+        "count": 45,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-03-14T00:00:00",
+        "count": 46,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-03-27T00:00:00",
+        "count": 47,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-04-06T00:00:00",
+        "count": 48,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-04-09T00:00:00",
+        "count": 49,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-04-10T00:00:00",
+        "count": 50,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-04-12T00:00:00",
+        "count": 51,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-04-21T00:00:00",
+        "count": 52,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-05-06T00:00:00",
+        "count": 53,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-05-08T00:00:00",
+        "count": 54,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-05-10T00:00:00",
+        "count": 55,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-05-11T00:00:00",
+        "count": 56,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-05-12T00:00:00",
+        "count": 57,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-05-29T00:00:00",
+        "count": 58,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-06-06T00:00:00",
+        "count": 59,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-06-09T00:00:00",
+        "count": 60,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-06-20T00:00:00",
+        "count": 62,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-06-24T00:00:00",
+        "count": 63,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-06-26T00:00:00",
+        "count": 64,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-06-29T00:00:00",
+        "count": 65,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-06-30T00:00:00",
+        "count": 66,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-07-01T00:00:00",
+        "count": 69,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-07-02T00:00:00",
+        "count": 70,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-07-03T00:00:00",
+        "count": 71,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-07-04T00:00:00",
+        "count": 72,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-07-05T00:00:00",
+        "count": 73,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-07-10T00:00:00",
+        "count": 74,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-07-15T00:00:00",
+        "count": 75,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-07-18T00:00:00",
+        "count": 76,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-07-19T00:00:00",
+        "count": 77,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-07-24T00:00:00",
+        "count": 78,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-07-28T00:00:00",
+        "count": 80,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-08-14T00:00:00",
+        "count": 81,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-08-21T00:00:00",
+        "count": 82,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-08-22T00:00:00",
+        "count": 83,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-08-25T00:00:00",
+        "count": 84,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-08-26T00:00:00",
+        "count": 85,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-08-27T00:00:00",
+        "count": 86,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-09-12T00:00:00",
+        "count": 87,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-09-14T00:00:00",
+        "count": 88,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-09-15T00:00:00",
+        "count": 89,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-09-26T00:00:00",
+        "count": 90,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-10-03T00:00:00",
+        "count": 91,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-10-04T00:00:00",
+        "count": 92,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-10-16T00:00:00",
+        "count": 93,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-10-19T00:00:00",
+        "count": 94,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-10-25T00:00:00",
+        "count": 95,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-10-30T00:00:00",
+        "count": 96,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-11-05T00:00:00",
+        "count": 97,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-11-12T00:00:00",
+        "count": 98,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-11-14T00:00:00",
+        "count": 99,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-11-21T00:00:00",
+        "count": 100,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-11-30T00:00:00",
+        "count": 101,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-12-03T00:00:00",
+        "count": 102,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-12-08T00:00:00",
+        "count": 103,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-12-13T00:00:00",
+        "count": 104,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-12-21T00:00:00",
+        "count": 105,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2021-12-31T00:00:00",
+        "count": 106,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-01-09T00:00:00",
+        "count": 107,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-01-23T00:00:00",
+        "count": 108,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-01-30T00:00:00",
+        "count": 109,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-02-12T00:00:00",
+        "count": 110,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-03-08T00:00:00",
+        "count": 111,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-04-17T00:00:00",
+        "count": 112,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-05-08T00:00:00",
+        "count": 113,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-05-28T00:00:00",
+        "count": 114,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-07-01T00:00:00",
+        "count": 115,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-07-04T00:00:00",
+        "count": 116,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-07-13T00:00:00",
+        "count": 117,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-07-28T00:00:00",
+        "count": 118,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-08-03T00:00:00",
+        "count": 119,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-08-14T00:00:00",
+        "count": 120,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-08-20T00:00:00",
+        "count": 121,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-08-28T00:00:00",
+        "count": 122,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-08-29T00:00:00",
+        "count": 123,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-09-22T00:00:00",
+        "count": 124,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-10-14T00:00:00",
+        "count": 125,
+        "Label": "Number of books read"
+      },
+      {
+        "Date": "2022-10-27T00:00:00",
+        "count": 126,
+        "Label": "Number of books read"
+      }
+    ]
+  }
+};
+vegaEmbed('div#vis3', vlSpec3);  
+</script>  
+  
+  <h1>Fecha de publicacion</h1>
+  
+  
+    <div id="vis1"></div>
+    
+<script>
+var vlSpec1 = {
+   "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 1000,
+  "height": 300,
+  "style": "cell",
+  "data": [
+    {
+      "name": "data-ffc8fbb9b5350a1208fcbcb084b65589",
+      "values": [
+        {"index": 1, "Original_Publication_Year": 1996},
+        {"index": 2, "Original_Publication_Year": 1994},
+        {"index": 3, "Original_Publication_Year": 1998},
+        {"index": 4, "Original_Publication_Year": 1996},
+        {"index": 5, "Original_Publication_Year": 2022},
+        {"index": 6, "Original_Publication_Year": 1994},
+        {"index": 7, "Original_Publication_Year": 2021},
+        {"index": 8, "Original_Publication_Year": 2013},
+        {"index": 9, "Original_Publication_Year": 1991},
+        {"index": 10, "Original_Publication_Year": 2004},
+        {"index": 12, "Original_Publication_Year": 1993},
+        {"index": 16, "Original_Publication_Year": 1994},
+        {"index": 17, "Original_Publication_Year": 2003},
+        {"index": 18, "Original_Publication_Year": 1992},
+        {"index": 19, "Original_Publication_Year": 1991},
+        {"index": 20, "Original_Publication_Year": 1990},
+        {"index": 21, "Original_Publication_Year": 2006},
+        {"index": 22, "Original_Publication_Year": 1990},
+        {"index": 24, "Original_Publication_Year": 2007},
+        {"index": 27, "Original_Publication_Year": 2010},
+        {"index": 29, "Original_Publication_Year": 1968},
+        {"index": 31, "Original_Publication_Year": 2008},
+        {"index": 35, "Original_Publication_Year": 2006},
+        {"index": 36, "Original_Publication_Year": 2003},
+        {"index": 41, "Original_Publication_Year": 2000},
+        {"index": 42, "Original_Publication_Year": 2001},
+        {"index": 43, "Original_Publication_Year": 2013},
+        {"index": 44, "Original_Publication_Year": 2001},
+        {"index": 45, "Original_Publication_Year": 1999},
+        {"index": 46, "Original_Publication_Year": 1997},
+        {"index": 47, "Original_Publication_Year": 1990},
+        {"index": 48, "Original_Publication_Year": 1996},
+        {"index": 49, "Original_Publication_Year": 1995},
+        {"index": 50, "Original_Publication_Year": 1994},
+        {"index": 51, "Original_Publication_Year": 1992},
+        {"index": 52, "Original_Publication_Year": 1993},
+        {"index": 53, "Original_Publication_Year": 1776},
+        {"index": 54, "Original_Publication_Year": 1955},
+        {"index": 55, "Original_Publication_Year": 1972},
+        {"index": 56, "Original_Publication_Year": 1994},
+        {"index": 57, "Original_Publication_Year": 1989},
+        {"index": 58, "Original_Publication_Year": 2013},
+        {"index": 59, "Original_Publication_Year": 2020},
+        {"index": 60, "Original_Publication_Year": 1970},
+        {"index": 61, "Original_Publication_Year": 2019},
+        {"index": 62, "Original_Publication_Year": 2018},
+        {"index": 64, "Original_Publication_Year": 1968},
+        {"index": 65, "Original_Publication_Year": 2017},
+        {"index": 67, "Original_Publication_Year": 2016},
+        {"index": 68, "Original_Publication_Year": 2016},
+        {"index": 69, "Original_Publication_Year": 2006},
+        {"index": 70, "Original_Publication_Year": 1911},
+        {"index": 71, "Original_Publication_Year": 2000},
+        {"index": 72, "Original_Publication_Year": 2005},
+        {"index": 73, "Original_Publication_Year": 2020},
+        {"index": 74, "Original_Publication_Year": 1990},
+        {"index": 75, "Original_Publication_Year": 2014},
+        {"index": 76, "Original_Publication_Year": 2013},
+        {"index": 77, "Original_Publication_Year": 2016},
+        {"index": 78, "Original_Publication_Year": 2014},
+        {"index": 79, "Original_Publication_Year": 2012},
+        {"index": 80, "Original_Publication_Year": 2006},
+        {"index": 82, "Original_Publication_Year": 2012},
+        {"index": 83, "Original_Publication_Year": 2016},
+        {"index": 84, "Original_Publication_Year": 2015},
+        {"index": 85, "Original_Publication_Year": 2011},
+        {"index": 86, "Original_Publication_Year": 2009},
+        {"index": 87, "Original_Publication_Year": 2018},
+        {"index": 88, "Original_Publication_Year": 2003},
+        {"index": 89, "Original_Publication_Year": 2005},
+        {"index": 90, "Original_Publication_Year": 1989},
+        {"index": 91, "Original_Publication_Year": 2013},
+        {"index": 92, "Original_Publication_Year": 2008},
+        {"index": 93, "Original_Publication_Year": 2002},
+        {"index": 94, "Original_Publication_Year": 2017},
+        {"index": 95, "Original_Publication_Year": 2012},
+        {"index": 97, "Original_Publication_Year": 1992},
+        {"index": 98, "Original_Publication_Year": 2014},
+        {"index": 99, "Original_Publication_Year": 2009},
+        {"index": 100, "Original_Publication_Year": 2011},
+        {"index": 101, "Original_Publication_Year": 2009},
+        {"index": 103, "Original_Publication_Year": 2007},
+        {"index": 104, "Original_Publication_Year": 2009},
+        {"index": 105, "Original_Publication_Year": 2017},
+        {"index": 107, "Original_Publication_Year": 2014},
+        {"index": 109, "Original_Publication_Year": 1998},
+        {"index": 110, "Original_Publication_Year": 1987},
+        {"index": 111, "Original_Publication_Year": 2006},
+        {"index": 113, "Original_Publication_Year": 2010},
+        {"index": 114, "Original_Publication_Year": 2019},
+        {"index": 115, "Original_Publication_Year": 1979},
+        {"index": 116, "Original_Publication_Year": 2015},
+        {"index": 119, "Original_Publication_Year": 2005},
+        {"index": 120, "Original_Publication_Year": 2006},
+        {"index": 124, "Original_Publication_Year": 2013},
+        {"index": 126, "Original_Publication_Year": 2011},
+        {"index": 128, "Original_Publication_Year": 2003},
+        {"index": 129, "Original_Publication_Year": 1973},
+        {"index": 132, "Original_Publication_Year": 2020},
+        {"index": 133, "Original_Publication_Year": 1996},
+        {"index": 134, "Original_Publication_Year": 1981},
+        {"index": 136, "Original_Publication_Year": 2010},
+        {"index": 138, "Original_Publication_Year": 2020},
+        {"index": 139, "Original_Publication_Year": 1991},
+        {"index": 141, "Original_Publication_Year": 1990},
+        {"index": 142, "Original_Publication_Year": 2015},
+        {"index": 143, "Original_Publication_Year": 2000},
+        {"index": 144, "Original_Publication_Year": 1986},
+        {"index": 145, "Original_Publication_Year": 2004},
+        {"index": 146, "Original_Publication_Year": 1985},
+        {"index": 154, "Original_Publication_Year": 2003},
+        {"index": 158, "Original_Publication_Year": 2013},
+        {"index": 159, "Original_Publication_Year": 2006},
+        {"index": 162, "Original_Publication_Year": 2009},
+        {"index": 164, "Original_Publication_Year": 2007},
+        {"index": 169, "Original_Publication_Year": 2003},
+        {"index": 171, "Original_Publication_Year": 1954},
+        {"index": 172, "Original_Publication_Year": 2019},
+        {"index": 173, "Original_Publication_Year": 2002},
+        {"index": 174, "Original_Publication_Year": 1990},
+        {"index": 179, "Original_Publication_Year": 1997},
+        {"index": 180, "Original_Publication_Year": 1995},
+        {"index": 181, "Original_Publication_Year": 2013},
+        {"index": 182, "Original_Publication_Year": 2000},
+        {"index": 183, "Original_Publication_Year": 2012},
+        {"index": 184, "Original_Publication_Year": 1989},
+        {"index": 188, "Original_Publication_Year": 2003},
+        {"index": 189, "Original_Publication_Year": 1985},
+        {"index": 191, "Original_Publication_Year": 2016},
+        {"index": 192, "Original_Publication_Year": 2001},
+        {"index": 193, "Original_Publication_Year": 2009},
+        {"index": 196, "Original_Publication_Year": 1988},
+        {"index": 197, "Original_Publication_Year": 1984},
+        {"index": 198, "Original_Publication_Year": 2009},
+        {"index": 199, "Original_Publication_Year": 2013},
+        {"index": 200, "Original_Publication_Year": 1987},
+        {"index": 201, "Original_Publication_Year": 1986},
+        {"index": 202, "Original_Publication_Year": 1990},
+        {"index": 203, "Original_Publication_Year": 1996},
+        {"index": 204, "Original_Publication_Year": 1986},
+        {"index": 205, "Original_Publication_Year": 1991},
+        {"index": 206, "Original_Publication_Year": 2010},
+        {"index": 207, "Original_Publication_Year": 2012},
+        {"index": 208, "Original_Publication_Year": 1984},
+        {"index": 209, "Original_Publication_Year": 2007},
+        {"index": 210, "Original_Publication_Year": 1984},
+        {"index": 214, "Original_Publication_Year": 1981},
+        {"index": 215, "Original_Publication_Year": 1976},
+        {"index": 219, "Original_Publication_Year": 1969},
+        {"index": 221, "Original_Publication_Year": 2002},
+        {"index": 222, "Original_Publication_Year": 1954},
+        {"index": 223, "Original_Publication_Year": 2007},
+        {"index": 224, "Original_Publication_Year": 2006},
+        {"index": 225, "Original_Publication_Year": 2006},
+        {"index": 226, "Original_Publication_Year": 1513},
+        {"index": 227, "Original_Publication_Year": 1991},
+        {"index": 228, "Original_Publication_Year": 2006},
+        {"index": 230, "Original_Publication_Year": 1987},
+        {"index": 231, "Original_Publication_Year": 1998},
+        {"index": 232, "Original_Publication_Year": 2002},
+        {"index": 233, "Original_Publication_Year": 1872},
+        {"index": 234, "Original_Publication_Year": 1879},
+        {"index": 235, "Original_Publication_Year": 1996},
+        {"index": 236, "Original_Publication_Year": 2003},
+        {"index": 237, "Original_Publication_Year": 2008},
+        {"index": 238, "Original_Publication_Year": 1960},
+        {"index": 239, "Original_Publication_Year": 1859},
+        {"index": 240, "Original_Publication_Year": 1992},
+        {"index": 241, "Original_Publication_Year": 1998},
+        {"index": 242, "Original_Publication_Year": 1996},
+        {"index": 243, "Original_Publication_Year": 1943},
+        {"index": 244, "Original_Publication_Year": 1892},
+        {"index": 245, "Original_Publication_Year": 1901},
+        {"index": 246, "Original_Publication_Year": 1937},
+        {"index": 247, "Original_Publication_Year": 2007},
+        {"index": 248, "Original_Publication_Year": 1865},
+        {"index": 249, "Original_Publication_Year": 1864},
+        {"index": 250, "Original_Publication_Year": -500},
+        {"index": 251, "Original_Publication_Year": 1320},
+        {"index": 252, "Original_Publication_Year": 2014},
+        {"index": 253, "Original_Publication_Year": 2010},
+        {"index": 254, "Original_Publication_Year": 2011},
+        {"index": 255, "Original_Publication_Year": 2013},
+        {"index": 256, "Original_Publication_Year": 2012},
+        {"index": 257, "Original_Publication_Year": 2009},
+        {"index": 258, "Original_Publication_Year": 2007},
+        {"index": 259, "Original_Publication_Year": 2008},
+        {"index": 260, "Original_Publication_Year": 2006},
+        {"index": 261, "Original_Publication_Year": 2015},
+        {"index": 262, "Original_Publication_Year": 2005},
+        {"index": 263, "Original_Publication_Year": 2007},
+        {"index": 264, "Original_Publication_Year": 2006},
+        {"index": 265, "Original_Publication_Year": 1954},
+        {"index": 266, "Original_Publication_Year": 1954},
+        {"index": 267, "Original_Publication_Year": 1982},
+        {"index": 268, "Original_Publication_Year": 1967},
+        {"index": 269, "Original_Publication_Year": 1951},
+        {"index": 270, "Original_Publication_Year": 1955},
+        {"index": 271, "Original_Publication_Year": 1950},
+        {"index": 272, "Original_Publication_Year": 1954},
+        {"index": 273, "Original_Publication_Year": 1951},
+        {"index": 274, "Original_Publication_Year": 1956},
+        {"index": 275, "Original_Publication_Year": 1952},
+        {"index": 276, "Original_Publication_Year": 1953},
+        {"index": 277, "Original_Publication_Year": 2008},
+        {"index": 278, "Original_Publication_Year": 2006},
+        {"index": 279, "Original_Publication_Year": 2007},
+        {"index": 280, "Original_Publication_Year": 2005},
+        {"index": 281, "Original_Publication_Year": 2014},
+        {"index": 282, "Original_Publication_Year": 1955},
+        {"index": 283, "Original_Publication_Year": 1993},
+        {"index": 284, "Original_Publication_Year": 1986},
+        {"index": 285, "Original_Publication_Year": 1982},
+        {"index": 286, "Original_Publication_Year": 1953},
+        {"index": 287, "Original_Publication_Year": 1952},
+        {"index": 288, "Original_Publication_Year": 1965},
+        {"index": 289, "Original_Publication_Year": 1897},
+        {"index": 290, "Original_Publication_Year": 1945},
+        {"index": 291, "Original_Publication_Year": 1962},
+        {"index": 292, "Original_Publication_Year": 1936},
+        {"index": 293, "Original_Publication_Year": 1926},
+        {"index": 294, "Original_Publication_Year": 1934},
+        {"index": 295, "Original_Publication_Year": 1939},
+        {"index": 296, "Original_Publication_Year": 2004},
+        {"index": 297, "Original_Publication_Year": 2011},
+        {"index": 298, "Original_Publication_Year": 2007},
+        {"index": 299, "Original_Publication_Year": 2008},
+        {"index": 300, "Original_Publication_Year": 2006},
+        {"index": 301, "Original_Publication_Year": 2007},
+        {"index": 302, "Original_Publication_Year": 2018},
+        {"index": 303, "Original_Publication_Year": 2015},
+        {"index": 304, "Original_Publication_Year": 2014},
+        {"index": 305, "Original_Publication_Year": 2013},
+        {"index": 306, "Original_Publication_Year": 1998},
+        {"index": 307, "Original_Publication_Year": 2007},
+        {"index": 308, "Original_Publication_Year": 2016},
+        {"index": 309, "Original_Publication_Year": 2003},
+        {"index": 310, "Original_Publication_Year": 2005},
+        {"index": 311, "Original_Publication_Year": 2000},
+        {"index": 312, "Original_Publication_Year": 1999},
+        {"index": 313, "Original_Publication_Year": 1978},
+        {"index": 314, "Original_Publication_Year": 2009},
+        {"index": 315, "Original_Publication_Year": 1974},
+        {"index": 316, "Original_Publication_Year": 2012},
+        {"index": 317, "Original_Publication_Year": 2004},
+        {"index": 318, "Original_Publication_Year": 2003},
+        {"index": 319, "Original_Publication_Year": 2004},
+        {"index": 320, "Original_Publication_Year": 1997},
+        {"index": 321, "Original_Publication_Year": 1991},
+        {"index": 322, "Original_Publication_Year": 1987},
+        {"index": 323, "Original_Publication_Year": 2013},
+        {"index": 324, "Original_Publication_Year": 2009},
+        {"index": 325, "Original_Publication_Year": 1988},
+        {"index": 326, "Original_Publication_Year": 1951},
+        {"index": 327, "Original_Publication_Year": 1932},
+        {"index": 328, "Original_Publication_Year": 1949},
+        {"index": 329, "Original_Publication_Year": 1953},
+        {"index": 330, "Original_Publication_Year": 1982},
+        {"index": 331, "Original_Publication_Year": 2005},
+        {"index": 332, "Original_Publication_Year": 2001},
+        {"index": 333, "Original_Publication_Year": 1937},
+        {"index": 334, "Original_Publication_Year": 1997}
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "data-ffc8fbb9b5350a1208fcbcb084b65589",
+      "transform": [
+        {
+          "type": "bin",
+          "field": "Original_Publication_Year",
+          "as": [
+            "bin_extent__500_2022_step_20_Original_Publication_Year",
+            "bin_extent__500_2022_step_20_Original_Publication_Year_end"
+          ],
+          "signal": "bin_extent__500_2022_step_20_Original_Publication_Year_bins",
+          "extent": [-500, 2022],
+          "step": 20
+        },
+        {
+          "type": "formula",
+          "expr": "!isValid(datum[\"bin_extent__500_2022_step_20_Original_Publication_Year\"]) || !isFinite(+datum[\"bin_extent__500_2022_step_20_Original_Publication_Year\"]) ? \"null\" : format(datum[\"bin_extent__500_2022_step_20_Original_Publication_Year\"], \"\") + \" – \" + format(datum[\"bin_extent__500_2022_step_20_Original_Publication_Year_end\"], \"\")",
+          "as": "bin_extent__500_2022_step_20_Original_Publication_Year_range"
+        },
+        {
+          "type": "aggregate",
+          "groupby": [
+            "bin_extent__500_2022_step_20_Original_Publication_Year",
+            "bin_extent__500_2022_step_20_Original_Publication_Year_end",
+            "bin_extent__500_2022_step_20_Original_Publication_Year_range"
+          ],
+          "ops": ["count"],
+          "fields": [null],
+          "as": ["__count"]
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "rect",
+      "style": ["bar"],
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "fill": {"value": "#4c78a8"},
+          "ariaRoleDescription": {"value": "bar"},
+          "description": {
+            "signal": "\"Original_Publication_Year (binned): \" + (!isValid(datum[\"bin_extent__500_2022_step_20_Original_Publication_Year\"]) || !isFinite(+datum[\"bin_extent__500_2022_step_20_Original_Publication_Year\"]) ? \"null\" : format(datum[\"bin_extent__500_2022_step_20_Original_Publication_Year\"], \"\") + \" – \" + format(datum[\"bin_extent__500_2022_step_20_Original_Publication_Year_end\"], \"\")) + \"; Count of Records: \" + (format(datum[\"__count\"], \"\"))"
+          },
+          "x": {
+            "scale": "x",
+            "field": "bin_extent__500_2022_step_20_Original_Publication_Year_range"
+          },
+          "width": {"scale": "x", "band": 1},
+          "y": {"scale": "y", "field": "__count"},
+          "y2": {"scale": "y", "value": 0}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "band",
+      "domain": {
+        "data": "data_0",
+        "field": "bin_extent__500_2022_step_20_Original_Publication_Year_range",
+        "sort": {
+          "field": "bin_extent__500_2022_step_20_Original_Publication_Year",
+          "op": "min"
+        }
+      },
+      "range": [0, {"signal": "width"}],
+      "paddingInner": 0.1,
+      "paddingOuter": 0.05
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {"data": "data_0", "field": "__count"},
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Fecha de publicacion",
+      "labelAngle": 0,
+      "labelBaseline": "top",
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Cantidad",
+      "labelAngle": 0,
+      "labelAlign": "right",
+      "labelBaseline": null,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ]
+};
+vegaEmbed('div#vis1', vlSpec1);  
+</script>  
+  
+  
+  
+  <h1>Cantidad de paginas por libro</h1>
+  
+  
+    <div id="vis2"></div>
+    
+<script>
+var vlSpec2 = {
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 400,
+  "height": 300,
+  "style": "cell",
+  "data": [
+    {
+      "name": "data-7885a66636e9e1a12085e13f498c036f",
+      "values": [
+        {"index": 1, "Number_of_Pages": 432},
+        {"index": 2, "Number_of_Pages": 424},
+        {"index": 3, "Number_of_Pages": 685},
+        {"index": 4, "Number_of_Pages": 880},
+        {"index": 5, "Number_of_Pages": 944},
+        {"index": 6, "Number_of_Pages": 1011},
+        {"index": 7, "Number_of_Pages": 476},
+        {"index": 8, "Number_of_Pages": 128},
+        {"index": 9, "Number_of_Pages": 352},
+        {"index": 10, "Number_of_Pages": 423},
+        {"index": 12, "Number_of_Pages": 912},
+        {"index": 16, "Number_of_Pages": 240},
+        {"index": 17, "Number_of_Pages": 317},
+        {"index": 18, "Number_of_Pages": 1007},
+        {"index": 19, "Number_of_Pages": 624},
+        {"index": 20, "Number_of_Pages": 705},
+        {"index": 21, "Number_of_Pages": 524},
+        {"index": 22, "Number_of_Pages": 800},
+        {"index": 24, "Number_of_Pages": 2956},
+        {"index": 27, "Number_of_Pages": 604},
+        {"index": 29, "Number_of_Pages": 297},
+        {"index": 31, "Number_of_Pages": 512},
+        {"index": 35, "Number_of_Pages": 399},
+        {"index": 36, "Number_of_Pages": 320},
+        {"index": 41, "Number_of_Pages": 710},
+        {"index": 42, "Number_of_Pages": 211},
+        {"index": 43, "Number_of_Pages": 419},
+        {"index": 44, "Number_of_Pages": 280},
+        {"index": 45, "Number_of_Pages": 531},
+        {"index": 46, "Number_of_Pages": 448},
+        {"index": 47, "Number_of_Pages": 281},
+        {"index": 48, "Number_of_Pages": 349},
+        {"index": 49, "Number_of_Pages": 331},
+        {"index": 50, "Number_of_Pages": 398},
+        {"index": 51, "Number_of_Pages": 384},
+        {"index": 52, "Number_of_Pages": 400},
+        {"index": 53, "Number_of_Pages": 1076},
+        {"index": 54, "Number_of_Pages": 385},
+        {"index": 55, "Number_of_Pages": 259},
+        {"index": 56, "Number_of_Pages": 368},
+        {"index": 57, "Number_of_Pages": 216},
+        {"index": 58, "Number_of_Pages": 160},
+        {"index": 59, "Number_of_Pages": 1232},
+        {"index": 60, "Number_of_Pages": 180},
+        {"index": 61, "Number_of_Pages": 160},
+        {"index": 62, "Number_of_Pages": 160},
+        {"index": 63, "Number_of_Pages": 995},
+        {"index": 64, "Number_of_Pages": 183},
+        {"index": 65, "Number_of_Pages": 338},
+        {"index": 67, "Number_of_Pages": 672},
+        {"index": 68, "Number_of_Pages": 160},
+        {"index": 69, "Number_of_Pages": 622},
+        {"index": 70, "Number_of_Pages": 176},
+        {"index": 71, "Number_of_Pages": 653},
+        {"index": 72, "Number_of_Pages": 268},
+        {"index": 73, "Number_of_Pages": 171},
+        {"index": 74, "Number_of_Pages": 466},
+        {"index": 75, "Number_of_Pages": 59},
+        {"index": 76, "Number_of_Pages": 50},
+        {"index": 77, "Number_of_Pages": 160},
+        {"index": 78, "Number_of_Pages": 40},
+        {"index": 79, "Number_of_Pages": 21},
+        {"index": 80, "Number_of_Pages": 25},
+        {"index": 82, "Number_of_Pages": 175},
+        {"index": 83, "Number_of_Pages": 448},
+        {"index": 84, "Number_of_Pages": 383},
+        {"index": 85, "Number_of_Pages": 332},
+        {"index": 86, "Number_of_Pages": 432},
+        {"index": 87, "Number_of_Pages": 366},
+        {"index": 88, "Number_of_Pages": 208},
+        {"index": 89, "Number_of_Pages": 622},
+        {"index": 90, "Number_of_Pages": 376},
+        {"index": 91, "Number_of_Pages": 350},
+        {"index": 92, "Number_of_Pages": 106},
+        {"index": 93, "Number_of_Pages": 229},
+        {"index": 94, "Number_of_Pages": 1248},
+        {"index": 95, "Number_of_Pages": 328},
+        {"index": 96, "Number_of_Pages": 209},
+        {"index": 97, "Number_of_Pages": 400},
+        {"index": 98, "Number_of_Pages": 425},
+        {"index": 99, "Number_of_Pages": 112},
+        {"index": 100, "Number_of_Pages": 499},
+        {"index": 101, "Number_of_Pages": 688},
+        {"index": 103, "Number_of_Pages": 463},
+        {"index": 104, "Number_of_Pages": 184},
+        {"index": 105, "Number_of_Pages": 272},
+        {"index": 107, "Number_of_Pages": 1087},
+        {"index": 109, "Number_of_Pages": 80},
+        {"index": 110, "Number_of_Pages": 243},
+        {"index": 111, "Number_of_Pages": 432},
+        {"index": 113, "Number_of_Pages": 1007},
+        {"index": 115, "Number_of_Pages": 193},
+        {"index": 116, "Number_of_Pages": 465},
+        {"index": 119, "Number_of_Pages": 296},
+        {"index": 120, "Number_of_Pages": 232},
+        {"index": 124, "Number_of_Pages": 214},
+        {"index": 126, "Number_of_Pages": 374},
+        {"index": 128, "Number_of_Pages": 592},
+        {"index": 129, "Number_of_Pages": 304},
+        {"index": 132, "Number_of_Pages": 944},
+        {"index": 133, "Number_of_Pages": 370},
+        {"index": 134, "Number_of_Pages": 224},
+        {"index": 136, "Number_of_Pages": 144},
+        {"index": 138, "Number_of_Pages": 336},
+        {"index": 139, "Number_of_Pages": 592},
+        {"index": 141, "Number_of_Pages": 232},
+        {"index": 142, "Number_of_Pages": 990},
+        {"index": 143, "Number_of_Pages": 152},
+        {"index": 144, "Number_of_Pages": 382},
+        {"index": 145, "Number_of_Pages": 208},
+        {"index": 146, "Number_of_Pages": 324},
+        {"index": 154, "Number_of_Pages": 192},
+        {"index": 158, "Number_of_Pages": 288},
+        {"index": 159, "Number_of_Pages": 342},
+        {"index": 162, "Number_of_Pages": 242},
+        {"index": 164, "Number_of_Pages": 366},
+        {"index": 169, "Number_of_Pages": 341},
+        {"index": 171, "Number_of_Pages": 317},
+        {"index": 172, "Number_of_Pages": 388},
+        {"index": 173, "Number_of_Pages": 227},
+        {"index": 174, "Number_of_Pages": 517},
+        {"index": 179, "Number_of_Pages": 229},
+        {"index": 180, "Number_of_Pages": 384},
+        {"index": 181, "Number_of_Pages": 256},
+        {"index": 182, "Number_of_Pages": 240},
+        {"index": 183, "Number_of_Pages": 400},
+        {"index": 184, "Number_of_Pages": 500},
+        {"index": 188, "Number_of_Pages": 160},
+        {"index": 189, "Number_of_Pages": 480},
+        {"index": 191, "Number_of_Pages": 212},
+        {"index": 192, "Number_of_Pages": 144},
+        {"index": 193, "Number_of_Pages": 154},
+        {"index": 196, "Number_of_Pages": 50},
+        {"index": 197, "Number_of_Pages": 384},
+        {"index": 198, "Number_of_Pages": 256},
+        {"index": 199, "Number_of_Pages": 345},
+        {"index": 200, "Number_of_Pages": 416},
+        {"index": 201, "Number_of_Pages": 50},
+        {"index": 202, "Number_of_Pages": 296},
+        {"index": 203, "Number_of_Pages": 340},
+        {"index": 204, "Number_of_Pages": 159},
+        {"index": 205, "Number_of_Pages": 144},
+        {"index": 206, "Number_of_Pages": 304},
+        {"index": 207, "Number_of_Pages": 136},
+        {"index": 208, "Number_of_Pages": 320},
+        {"index": 209, "Number_of_Pages": 160},
+        {"index": 210, "Number_of_Pages": 471},
+        {"index": 214, "Number_of_Pages": 454},
+        {"index": 215, "Number_of_Pages": 408},
+        {"index": 219, "Number_of_Pages": 331},
+        {"index": 221, "Number_of_Pages": 528},
+        {"index": 222, "Number_of_Pages": 182},
+        {"index": 223, "Number_of_Pages": 485},
+        {"index": 224, "Number_of_Pages": 552},
+        {"index": 225, "Number_of_Pages": 241},
+        {"index": 226, "Number_of_Pages": 132},
+        {"index": 227, "Number_of_Pages": 536},
+        {"index": 228, "Number_of_Pages": 672},
+        {"index": 230, "Number_of_Pages": 370},
+        {"index": 231, "Number_of_Pages": 510},
+        {"index": 232, "Number_of_Pages": 295},
+        {"index": 233, "Number_of_Pages": 99},
+        {"index": 235, "Number_of_Pages": 218},
+        {"index": 236, "Number_of_Pages": 371},
+        {"index": 237, "Number_of_Pages": 374},
+        {"index": 238, "Number_of_Pages": 336},
+        {"index": 239, "Number_of_Pages": 489},
+        {"index": 240, "Number_of_Pages": 400},
+        {"index": 241, "Number_of_Pages": 969},
+        {"index": 242, "Number_of_Pages": 835},
+        {"index": 243, "Number_of_Pages": 96},
+        {"index": 244, "Number_of_Pages": 389},
+        {"index": 245, "Number_of_Pages": 256},
+        {"index": 246, "Number_of_Pages": 112},
+        {"index": 247, "Number_of_Pages": 315},
+        {"index": 248, "Number_of_Pages": 136},
+        {"index": 249, "Number_of_Pages": 240},
+        {"index": 250, "Number_of_Pages": 273},
+        {"index": 251, "Number_of_Pages": 798},
+        {"index": 252, "Number_of_Pages": 516},
+        {"index": 253, "Number_of_Pages": 553},
+        {"index": 254, "Number_of_Pages": 521},
+        {"index": 255, "Number_of_Pages": 597},
+        {"index": 256, "Number_of_Pages": 586},
+        {"index": 257, "Number_of_Pages": 387},
+        {"index": 258, "Number_of_Pages": 320},
+        {"index": 259, "Number_of_Pages": 361},
+        {"index": 260, "Number_of_Pages": 279},
+        {"index": 261, "Number_of_Pages": 400},
+        {"index": 262, "Number_of_Pages": 480},
+        {"index": 263, "Number_of_Pages": 566},
+        {"index": 264, "Number_of_Pages": 503},
+        {"index": 265, "Number_of_Pages": 322},
+        {"index": 266, "Number_of_Pages": 398},
+        {"index": 267, "Number_of_Pages": 560},
+        {"index": 268, "Number_of_Pages": 752},
+        {"index": 269, "Number_of_Pages": 277},
+        {"index": 270, "Number_of_Pages": 221},
+        {"index": 271, "Number_of_Pages": 206},
+        {"index": 272, "Number_of_Pages": 224},
+        {"index": 273, "Number_of_Pages": 240},
+        {"index": 274, "Number_of_Pages": 288},
+        {"index": 275, "Number_of_Pages": 248},
+        {"index": 276, "Number_of_Pages": 243},
+        {"index": 277, "Number_of_Pages": 756},
+        {"index": 278, "Number_of_Pages": 563},
+        {"index": 279, "Number_of_Pages": 629},
+        {"index": 280, "Number_of_Pages": 498},
+        {"index": 281, "Number_of_Pages": 382},
+        {"index": 282, "Number_of_Pages": 192},
+        {"index": 283, "Number_of_Pages": 464},
+        {"index": 284, "Number_of_Pages": 528},
+        {"index": 285, "Number_of_Pages": 450},
+        {"index": 286, "Number_of_Pages": 256},
+        {"index": 287, "Number_of_Pages": 244},
+        {"index": 288, "Number_of_Pages": 604},
+        {"index": 289, "Number_of_Pages": 488},
+        {"index": 290, "Number_of_Pages": 122},
+        {"index": 292, "Number_of_Pages": 232},
+        {"index": 293, "Number_of_Pages": 288},
+        {"index": 294, "Number_of_Pages": 274},
+        {"index": 295, "Number_of_Pages": 264},
+        {"index": 296, "Number_of_Pages": 509},
+        {"index": 297, "Number_of_Pages": 384},
+        {"index": 298, "Number_of_Pages": 590},
+        {"index": 299, "Number_of_Pages": 572},
+        {"index": 300, "Number_of_Pages": 541},
+        {"index": 301, "Number_of_Pages": 662},
+        {"index": 302, "Number_of_Pages": 650},
+        {"index": 303, "Number_of_Pages": 512},
+        {"index": 304, "Number_of_Pages": 464},
+        {"index": 305, "Number_of_Pages": 456},
+        {"index": 306, "Number_of_Pages": 341},
+        {"index": 307, "Number_of_Pages": 759},
+        {"index": 308, "Number_of_Pages": 343},
+        {"index": 309, "Number_of_Pages": 912},
+        {"index": 310, "Number_of_Pages": 652},
+        {"index": 311, "Number_of_Pages": 734},
+        {"index": 312, "Number_of_Pages": 435},
+        {"index": 313, "Number_of_Pages": 1152},
+        {"index": 314, "Number_of_Pages": 1074},
+        {"index": 315, "Number_of_Pages": 253},
+        {"index": 316, "Number_of_Pages": 322},
+        {"index": 317, "Number_of_Pages": 544},
+        {"index": 318, "Number_of_Pages": 931},
+        {"index": 319, "Number_of_Pages": 1050},
+        {"index": 320, "Number_of_Pages": 845},
+        {"index": 321, "Number_of_Pages": 422},
+        {"index": 322, "Number_of_Pages": 463},
+        {"index": 323, "Number_of_Pages": 457},
+        {"index": 324, "Number_of_Pages": 384},
+        {"index": 325, "Number_of_Pages": 464},
+        {"index": 326, "Number_of_Pages": 244},
+        {"index": 327, "Number_of_Pages": 268},
+        {"index": 328, "Number_of_Pages": 298},
+        {"index": 329, "Number_of_Pages": 194},
+        {"index": 330, "Number_of_Pages": 231},
+        {"index": 331, "Number_of_Pages": 377},
+        {"index": 332, "Number_of_Pages": 635},
+        {"index": 333, "Number_of_Pages": 366},
+        {"index": 334, "Number_of_Pages": 309}
+      ]
+    },
+    {
+      "name": "data_1",
+      "source": "data-7885a66636e9e1a12085e13f498c036f",
+      "transform": [
+        {
+          "type": "bin",
+          "field": "Number_of_Pages",
+          "as": [
+            "bin_extent_0_1400_step_100_Number_of_Pages",
+            "bin_extent_0_1400_step_100_Number_of_Pages_end"
+          ],
+          "signal": "layer_0_bin_extent_0_1400_step_100_Number_of_Pages_bins",
+          "extent": [0, 1400],
+          "step": 100
+        },
+        {
+          "type": "aggregate",
+          "groupby": [
+            "bin_extent_0_1400_step_100_Number_of_Pages",
+            "bin_extent_0_1400_step_100_Number_of_Pages_end"
+          ],
+          "ops": ["count"],
+          "fields": [null],
+          "as": ["__count"]
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"bin_extent_0_1400_step_100_Number_of_Pages\"]) && isFinite(+datum[\"bin_extent_0_1400_step_100_Number_of_Pages\"])"
+        }
+      ]
+    },
+    {
+      "name": "data_2",
+      "source": "data-7885a66636e9e1a12085e13f498c036f",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": [],
+          "ops": ["mean"],
+          "fields": ["Number_of_Pages"],
+          "as": ["mean_Number_of_Pages"]
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"mean_Number_of_Pages\"]) && isFinite(+datum[\"mean_Number_of_Pages\"])"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_marks",
+      "type": "rect",
+      "style": ["bar"],
+      "from": {"data": "data_1"},
+      "encode": {
+        "update": {
+          "fill": {"value": "#4c78a8"},
+          "ariaRoleDescription": {"value": "bar"},
+          "description": {
+            "signal": "\"Number_of_Pages (binned): \" + (!isValid(datum[\"bin_extent_0_1400_step_100_Number_of_Pages\"]) || !isFinite(+datum[\"bin_extent_0_1400_step_100_Number_of_Pages\"]) ? \"null\" : format(datum[\"bin_extent_0_1400_step_100_Number_of_Pages\"], \"\") + \" – \" + format(datum[\"bin_extent_0_1400_step_100_Number_of_Pages_end\"], \"\")) + \"; Count of Records: \" + (format(datum[\"__count\"], \"\"))"
+          },
+          "x2": [
+            {
+              "test": "!isValid(datum[\"bin_extent_0_1400_step_100_Number_of_Pages\"]) || !isFinite(+datum[\"bin_extent_0_1400_step_100_Number_of_Pages\"])",
+              "value": 0
+            },
+            {
+              "scale": "x",
+              "field": "bin_extent_0_1400_step_100_Number_of_Pages",
+              "offset": 1
+            }
+          ],
+          "x": [
+            {
+              "test": "!isValid(datum[\"bin_extent_0_1400_step_100_Number_of_Pages\"]) || !isFinite(+datum[\"bin_extent_0_1400_step_100_Number_of_Pages\"])",
+              "value": 0
+            },
+            {
+              "scale": "x",
+              "field": "bin_extent_0_1400_step_100_Number_of_Pages_end"
+            }
+          ],
+          "y": {"scale": "y", "field": "__count"},
+          "y2": {"scale": "y", "value": 0}
+        }
+      }
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "rule",
+      "style": ["rule"],
+      "from": {"data": "data_2"},
+      "encode": {
+        "update": {
+          "stroke": {"value": "red"},
+          "description": {
+            "signal": "\"Mean of Number_of_Pages: \" + (format(datum[\"mean_Number_of_Pages\"], \"\"))"
+          },
+          "x": [
+            {
+              "test": "!isValid(datum[\"mean_Number_of_Pages\"]) || !isFinite(+datum[\"mean_Number_of_Pages\"])",
+              "value": 0
+            },
+            {"scale": "x", "field": "mean_Number_of_Pages"}
+          ],
+          "y": {"value": 0},
+          "y2": {"field": {"group": "height"}},
+          "strokeWidth": {"value": 5}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {
+            "signal": "[layer_0_bin_extent_0_1400_step_100_Number_of_Pages_bins.start, layer_0_bin_extent_0_1400_step_100_Number_of_Pages_bins.stop]"
+          },
+          {"data": "data_2", "field": "mean_Number_of_Pages"}
+        ]
+      },
+      "range": [0, {"signal": "width"}],
+      "bins": {
+        "signal": "layer_0_bin_extent_0_1400_step_100_Number_of_Pages_bins"
+      },
+      "nice": true,
+      "zero": false
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {"data": "data_1", "field": "__count"},
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Numero de paginas",
+      "labelAngle": 0,
+      "labelBaseline": "top",
+      "labelFlush": true,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(width/10)"},
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Cantidad",
+      "labelAngle": 0,
+      "labelAlign": "right",
+      "labelBaseline": null,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ]
+};
+vegaEmbed('div#vis2', vlSpec2);  
+</script>  
+      
+
+
+  
+  
+  
+  
+  <h1>Autores mas leidos</h1>
+    
+  <div class="flourish-embed" data-src="visualisation/11798591"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+  <h1>Calificacion</h1>
+  
+  <div class="flourish-embed flourish-sankey" data-src="visualisation/11798759"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+  
+</body>
